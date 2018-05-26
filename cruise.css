@@ -379,6 +379,13 @@ body {
   align-self: center;
 }
 
+.item1_content>div, .item2_content>div, .item3_content>div, .item4_content>div, .item5_content>div, .item6_content>div {
+  grid-column: 2 / 6;
+  grid-row: 2 / 3;
+  align-self: center;
+  float: left;
+}
+
 .item1, .item2, .item3, .item4, .item5, .item6 {
   font-size: 14px;
 }
@@ -402,4 +409,74 @@ body {
 
 .left span {
   padding-left: 10px;
+}
+
+.icon-trash-my::after {
+  content: "\f014";
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.icon-trash-my>span {
+  padding: 0px 10px 0px 5px;
+}
+
+.popWindow {
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  border: 2px solid #00b4CF;
+  background-color: #fff;
+  width: 570px;
+  box-shadow: 0px 3px 5px #000;
+  display: none;
+  height: 150px;
+  padding: 10px 10px;
+}
+
+.pop_header {
+  overflow: hidden;
+}
+
+.popWindow input {
+  width: 97%;
+  height: 30px;
+  border: 1px solid #333;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.pop_header>div:nth-child(1) {
+  float: left;
+}
+
+.pop_header>div:nth-child(2) {
+  float: right;
+  color: #00b4CF;
+}
+
+.icon-close {
+  cursor: pointer;
+}
+
+.pop_footer>div {
+  float: left;
+  color: #fff;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 28px;
+  cursor: pointer;
+}
+
+.pop_footer>div:nth-child(1) {
+  background-color: #00B4CF;
+  margin-right: 10px;
+}
+
+.pop_footer>div:nth-child(2) {
+  background-color: #2D4054;
 }

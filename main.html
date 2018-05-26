@@ -86,8 +86,8 @@
         <div class="item1_idle">Idle</div>
         <div class="icon-info">192.168.1.102</div>
         <div class="icon-folder">/var/lib/curise-agent</div>
-        <div class="item1_content">
-          <div class="icon-plus"></div>
+        <div id="item1_content" class="item1_content">
+          <div id="icon-plus" class="icon-plus"></div>
         </div>
       </div>
       <div class="item2">
@@ -98,8 +98,8 @@
         <div class="item2_building">Building</div>
         <div class="icon-info">192.168.1.102</div>
         <div class="icon-folder">/var/lib/curise-agent</div>
-        <div class="item2_content">
-          <div class="icon-plus"></div>
+        <div id="item2_content" class="item2_content">
+          <div id="icon-plus" class="icon-plus"></div>
         </div>
       </div>
       <div class="item3">
@@ -110,8 +110,8 @@
         <div class="item3_building">Building</div>
         <div class="icon-info">192.168.1.102</div>
         <div class="icon-folder">/var/lib/curise-agent</div>
-        <div class="item3_content">
-          <div class="icon-plus"></div>
+        <div id="item3_content" class="item3_content">
+          <div id="icon-plus" class="icon-plus"></div>
         </div>
       </div>
       <div class="item4">
@@ -122,8 +122,8 @@
         <div class="item4_building">Building</div>
         <div class="icon-info">192.168.1.102</div>
         <div class="icon-folder">/var/lib/curise-agent</div>
-        <div class="item4_content">
-          <div class="icon-plus"></div>
+        <div id="item4_content" class="item4_content">
+          <div id="icon-plus" class="icon-plus"></div>
         </div>
       </div>
       <div class="item5">
@@ -134,8 +134,8 @@
         <div class="item5_idle">Idle</div>
         <div class="icon-info">192.168.1.102</div>
         <div class="icon-folder">/var/lib/curise-agent</div>
-        <div class="item5_content">
-          <div class="icon-plus"></div>
+        <div id="item5_content" class="item5_content">
+          <div id="icon-plus" class="icon-plus"></div>
         </div>
       </div>
       <div class="item6">
@@ -146,13 +146,27 @@
         <div class="item6_idle">Idle</div>
         <div class="icon-info">192.168.1.102</div>
         <div class="icon-folder">/var/lib/curise-agent</div>
-        <div class="item6_content">
-          <div class="icon-plus"></div>
+        <div id="item6_content" class="item6_content">
+          <div id="icon-plus" class="icon-plus"></div>
         </div>
       </div>
       <div class="search icon-search"></div>
     </div>
   </section>
+  <div id="popWindow" class="popWindow">
+    <div class="pop_header">
+      <div>Separate multiple resource name with commas</div>
+      <div id="icon-close" class="icon-close"></div>
+    </div>
+    <div class="pop_content">
+      <input type="text" placeholder="Input value" id="inputValue" />
+    </div>
+    <div class="pop_footer">
+      <div onclick="addResource()">Add Resource</div>
+      <div>Cancel</div>
+    </div>
+  </div>
 </body>
+<script type="text/javascript" src="./cruise.js"></script>
 
 </html>
